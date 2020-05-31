@@ -11,6 +11,7 @@
   --accent-color: #2196f3;
   --benefits-color: #757575;
   --footer-color: rgba(255, 255, 255, 0.6);
+  --team-background-color: #f5f4fa;
 }
 
 img {
@@ -36,13 +37,18 @@ html {
 
 body {
   margin: 0;
-  background-color: #ddcdcd;
+  background-color: var(--primary-white-color);
 
   font-family: Roboto, sans-serif;
 }
 
+/* Header */
+
 .page-header {
   text-align: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  outline: 2px solid tomato;
 }
 
 .container {
@@ -50,8 +56,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
-  background-color: green;
 }
 
 .logo {
@@ -63,8 +67,27 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-web {
+.page-header__logo {
   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.1923;
+  letter-spacing: 0.03em;
+}
+
+.page-footer__logo {
+  color: var(--accent-color);
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.page-footer__logo-invers {
+  color: var(--primary-white-color);
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
 /* Site nav */
@@ -114,20 +137,29 @@ body {
 }
 
 .hero__title {
-  color: var(--primary-white-color);
+  color: var(--primary-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
 
-  margin-top: 0;
-  margin-bottom: 46px;
+  margin-top: 200px;
+  margin-bottom: 30px;
 }
 
 /* Section */
 
 .section {
-  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.padding-buttom {
+  padding-bottom: 50px;
+}
+
+.section.no-padding-top {
+  padding-top: 0;
 }
 
 .section-title {
@@ -139,9 +171,11 @@ body {
 
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 50px;
+  outline: 2px solid tomato;
 }
 
-/* Benefits */
+/* Advantages */
 
 .list .title {
   color: var(--primary-text-color);
@@ -152,7 +186,6 @@ body {
   text-transform: uppercase;
 
   margin-top: 0;
-  margin-bottom: 0;
 }
 
 .list .description {
@@ -162,6 +195,19 @@ body {
 
   margin-top: 0;
   margin-bottom: 0;
+  outline: 2px solid tomato;
+}
+
+.advantages__icon {
+  display: inline-block;
+  margin-bottom: 30px;
+  outline: 2px solid tomato;
+}
+
+.advantages__item {
+  display: inline-block;
+  margin-bottom: 10px;
+  outline: 2px solid tomato;
 }
 
 /* Work */
@@ -173,11 +219,34 @@ body {
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
-  background-color: blue;
 }
 
 /* Team */
-/* Team */
+
+.team {
+  background-color: var(--team-background-color);
+}
+
+.team__img {
+  padding-bottom: 30px;
+  outline: 2px solid tomato;
+}
+
+.team__name {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  outline: 2px solid tomato;
+}
+
+.team__description {
+  padding-bottom: 16px;
+  outline: 2px solid tomato;
+}
+
+.team__list {
+  padding-bottom: 24px;
+  outline: 2px solid tomato;
+}
 
 .team-list .title {
   color: var(--primary-text-color);
@@ -194,6 +263,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+/* Client*/
 
 .client-border {
   width: 170px;
@@ -205,6 +275,10 @@ body {
 }
 
 /* Portfolio */
+
+.portfolio-nav-list {
+  display: flex;
+}
 
 .portfolio-nav-list .link {
   background-color: #f5f4fa;
@@ -232,6 +306,14 @@ body {
   line-height: 1.87;
 }
 
+/* Footer */
+
+.page-footer {
+  background-color: #2f303a;
+  padding-top: 48px;
+  padding-bottom: 21px;
+}
+
 .page-footer .title {
   color: var(--primary-white-color);
   font-weight: 700;
@@ -242,7 +324,7 @@ body {
   margin-bottom: 0;
 }
 
-.page-footer .address {
+.page-footer__address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -306,6 +388,8 @@ body {
   padding: 10px 32px;
   height: 50px;
   letter-spacing: 0.06em;
+
+  margin-bottom: 200px;
 }
 
 .button-down {

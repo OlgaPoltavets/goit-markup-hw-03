@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Шапка сайта -->
-    <header class="page-header">
-      <div class="container">
+    <!-- Шапка сайта Header-->
+    <header class="header">
+      <div class="container page-header">
         <nav>
-          <a class="logo"><span class="logo-web">Web</span> Studio</a>
+          <a class="logo"><span class="page-header__logo">Web</span> Studio</a>
 
           <ul class="site-nav list">
-            <li><a href="" class="link current">Студия Cnelbz</a></li>
+            <li><a href="" class="link current">Студия</a></li>
             <li><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li><a href="" class="link">Контакты</a></li>
           </ul>
@@ -56,12 +56,14 @@
       <section class="section">
         <div class="container">
           <h2>Features СКРЫТЬ ЗАГОЛОВОК</h2>
-          <ul class="list">
+          <ul class="list advantages">
             <li>
               <!-- Внимание к деталям -->
-              <a href=""><img src="./images/antenna.svg" alt="antenna" /></a>
+              <a href="" class="advantages__icon"
+                ><img src="./images/antenna.svg" alt="antenna"
+              /></a>
 
-              <h3 class="title">Внимание к деталям</h3>
+              <h3 class="title advantages__item">Внимание к деталям</h3>
               <p class="description">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
@@ -70,9 +72,11 @@
 
             <li>
               <!-- Пунктуальность -->
-              <a href=""><img src="./images/clock.svg" alt="clock" /></a>
+              <a href="" class="advantages__icon"
+                ><img src="./images/clock.svg" alt="clock"
+              /></a>
 
-              <h3 class="title">Пунктуальность</h3>
+              <h3 class="title advantages__item">Пунктуальность</h3>
               <p class="description">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
@@ -81,8 +85,10 @@
 
             <li>
               <!-- Планирование -->
-              <a href=""><img src="./images/diagram.svg" alt="diagram-1" /></a>
-              <h3 class="title">Планирование</h3>
+              <a href="" class="advantages__icon"
+                ><img src="./images/diagram.svg" alt="diagram-1"
+              /></a>
+              <h3 class="title advantages__item">Планирование</h3>
               <p class="description">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
@@ -91,10 +97,10 @@
 
             <li>
               <!-- Современные технологии -->
-              <a href=""
+              <a href="" class="advantages__icon"
                 ><img src="./images/astronaut.svg" alt="astronaut-1"
               /></a>
-              <h3 class="title">Современные технологии</h3>
+              <h3 class="title advantages__item">Современные технологии</h3>
               <p class="description">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -104,7 +110,7 @@
         </div>
       </section>
 
-      <!-- Работа -->
+      <!-- Работа Work-->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
@@ -145,9 +151,9 @@
         </div>
       </section>
 
-      <!-- Команда -->
+      <!-- Команда Team-->
       <section class="section">
-        <div class="container">
+        <div class="container team">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list">
             <li>
@@ -156,10 +162,11 @@
                 alt="photo"
                 width="278"
                 height="260"
+                class="team__img"
               />
-              <h3 class="title">John Smith</h3>
-              <p class="description">Product Designer</p>
-              <ul class="list">
+              <h3 class="title team__name">John Smith</h3>
+              <p class="description team__description">Product Designer</p>
+              <ul class="list team__list">
                 <li>
                   <a href=""
                     ><img src="./images/instagram-2.svg" alt="Instagram" />
@@ -187,10 +194,11 @@
                 alt="photo"
                 width="278"
                 height="260"
+                class="team__img"
               />
-              <h3 class="title">Marta Stewart</h3>
-              <p class="description">Frontend Developer</p>
-              <ul class="list">
+              <h3 class="title team__name">Marta Stewart</h3>
+              <p class="description team__description">Frontend Developer</p>
+              <ul class="list team__list">
                 <li>
                   <a href=""
                     ><img src="./images/instagram-2.svg" alt="Instagram" />
@@ -218,10 +226,11 @@
                 alt="photo"
                 width="278"
                 height="260"
+                class="team__img"
               />
-              <h3 class="title">Robert Jakis</h3>
-              <p class="description">Marketing</p>
-              <ul class="list">
+              <h3 class="title team__name">Robert Jakis</h3>
+              <p class="description team__description">Marketing</p>
+              <ul class="list team__list">
                 <li>
                   <a href=""
                     ><img src="./images/instagram-2.svg" alt="Instagram" />
@@ -249,10 +258,11 @@
                 alt="photo"
                 width="278"
                 height="260"
+                class="team__img"
               />
-              <h3 class="title">Martin Doe</h3>
-              <p class="description">UI Designer</p>
-              <ul class="list">
+              <h3 class="title team__name">Martin Doe</h3>
+              <p class="description team__description">UI Designer</p>
+              <ul class="list team__list">
                 <li>
                   <a href=""
                     ><img src="./images/instagram-2.svg" alt="Instagram" />
@@ -277,33 +287,33 @@
         </div>
       </section>
 
-      <!-- Клиенты -->
+      <!-- Клиенты Client-->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="list">
             <li class="client-border">
-              <a href=""><img src="./images/logo1.svg" alt="YA & CO" /></a>
+              <a href=""><img src="./images/client1.svg" alt="YA & CO" /></a>
             </li>
-            <li>
+            <li class="client-border">
               <a href=""
-                ><img src="./images/logo2.svg" alt="COMPANY TAGLINE HERE"
+                ><img src="./images/client2.svg" alt="COMPANY TAGLINE HERE"
               /></a>
             </li>
-            <li>
-              <a href=""><img src="./images/logo3.svg" alt="COMPANY" /></a>
+            <li class="client-border">
+              <a href=""><img src="./images/client3.svg" alt="COMPANY" /></a>
             </li>
-            <li>
+            <li class="client-border">
               <a href=""
-                ><img src="./images/logo4.svg" alt="FOSTER PETERS"
+                ><img src="./images/client4.svg" alt="FOSTER PETERS"
               /></a>
             </li>
-            <li>
-              <a href=""><img src="./images/logo5.svg" alt="BRAND" /></a>
+            <li class="client-border">
+              <a href=""><img src="./images/client5.svg" alt="BRAND" /></a>
             </li>
-            <li>
+            <li class="client-border">
               <a href=""
-                ><img src="./images/logo6.svg" alt="COMPANY TAG LINE"
+                ><img src="./images/client6.svg" alt="COMPANY TAG LINE"
               /></a>
             </li>
           </ul>
@@ -312,13 +322,18 @@
     </main>
 
     <!-- Футер -->
-    <footer class="page-footer">
-      <div class="container">
+    <footer class="footer">
+      <div class="container page-footer">
         <div>
-          <a class="logo"><span class="logo-web">Web</span> Studio</a>
+          <a class="logo"
+            ><span class="page-footer__logo">Web</span>
+            <span class="page-footer__logo-invers">Studio</span></a
+          >
           <ul class="list">
             <li>
-              <a href="" class="address">г. Киев, пр-т Леси Украинки, 26</a>
+              <a href="" class="page-footer__address"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
             </li>
             <li><a href="" class="list">info@example.com</a></li>
             <li><a href="" class="list">+38 099 111 11 11</a></li>
